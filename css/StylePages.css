@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.bg-dark{
+	background-color: #222 !important;
+}
+.padding{
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.container-text{
+	padding-left: 20%;
+	padding-right: 20%;
+	margin-left: 0px;
+	margin-right: 0px;
+	max-width: 100%;
+
+}
+.footer{
+	background-color: #222;
+	height: 100px;
+	margin-top: 50px;
+	color:  rgba(255,255,255,.55);
+	padding-top: 20px;
+	text-align: center;
+}
+.control-width{
+	padding-right: 20%;
+	padding-left: 20%;
+}
+
+.btn-dark{
+	background-color: #222;
+	color: #f9f9f9;
+	border-radius: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
