@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.bg-dark{
+	background-color: #222 !important;
+}
+.divider{
+	height: 120px;
+}
+
+.footer{
+	background-color: #222;
+	height: 100px;
+	margin-top: 50px;
+	color:  rgba(255,255,255,.55);
+	padding-top: 20px;
+	text-align: center;
+}
+.container-text{
+	padding-left: 20%;
+	padding-right: 20%;
+	margin-top: 80px;
+	margin-left: 0px;
+	margin-right: 0px;
+	max-width: 100%;
+
+}
+
+.prata-h1{
+	font-family: Prata, serif;
+    font-size: 67.34px;
+    font-weight: 400px;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+
+.prata-h2{
+	font-family: Prata, serif;
+    font-size: 50.52px;
+    font-weight: 400px;
+    font-style: normal;
+    margin-top: 25px;
+}
+
+
+.prata-h3{
+	font-family: Prata, serif;
+    font-size: 37.90px;
+    font-weight: 400px;
+    font-style: normal;
+    margin-top: 25px;
+}
+
+.prata-h4{
+	font-family: Prata, serif;
+    font-size: 28.43px;
+    font-weight: 400px;
+    font-style: normal;
+    margin-top: 25px;
+}
+
+.prata-h5{
+	font-family: Prata, serif;
+    font-size: 21.33px;
+    font-weight: 400px;
+    font-style: normal;
+    margin-top: 25px;
+}
+
+.robotobody{
+	font-family: roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400px;
+	font-style: normal;
+	margin-bottom: 50px;
+	color: #696969;
+	padding-right: 50px;
+	
+}
+.robotobody-emp{
+	font-family: roboto, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	margin-bottom: 50px;
+
+}
+
+.properties{
+	font-family: roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400px;
+	font-style: normal;	
+	padding-left: 50px;
+	border-left: 1px solid #696969;
+
+
+}
+	
+.robotobody-link{
+	font-family: roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400px;
+	font-style: normal;
+	margin-bottom: 50px;
+	color: #2412ab;
+}
+
+.urbanist-h1{
+	font-family: urbanist, sans-serif;
+    font-size: 90.44px;
+    font-weight: 100;
+    font-style: normal;
+   
+}
+
+.urbanist-h2{
+	font-family: urbanist, sans-serif;
+    font-size: 63.96px;
+    font-weight: 200;
+    font-style: normal;
+    margin-top: 25px;
+}
+
+
+.urbanist-h3{
+	font-family: urbanist, sans-serif;
+    font-size: 45.23px;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 25px;
+}
+
+.urbanist-h4{
+	font-family: urbanist, sans-serif;
+    font-size: 31.99px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 25px;
+}
+
+.urbanist-h5{
+	font-family: urbanist, sans-serif;
+    font-size: 22.62px;
+    font-weight: 100;
+    font-style: normal;
+    margin-top: 25px;
+}
+
+.urbanistbody{
+	font-family: urbanist, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	margin-bottom: 50px;
+	padding-right: 50px;
+
+}
+.urbanistbody-emp{
+	font-family: urbanist, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	margin-bottom: 50px;
+
+}
+
+.properties{
+	font-family: urbanist, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;	
+	padding-left: 25px;
+	border-left: 1px solid #696969;
+
+}
+	
+.urbanistbody-link{
+	font-family: urbanist, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	margin-bottom: 50px;
+	color: #212529;
+	text-decoration: underline;
+}
+
+.federo-h1{
+	font-family: Federo, sans-serif;
+    font-size: 48.83px;
+    font-weight: 100;
+    font-style: normal;
+    margin-top: 20px;
+    color: #444;
+    text-transform: uppercase;
+}
+
+.federo-h2{
+	font-family: federo, sans-serif;
+    font-size: 39.06px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 25px;
+    text-transform: uppercase;
+    color: #444;
+}
+
+
+.federo-h3{
+	font-family: federo, sans-serif;
+    font-size: 31.25px;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 25px;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.federo-h4{
+	font-family: federo, sans-serif;
+    font-size: 25.00px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 25px;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.federo-h5{
+	font-family: federo, sans-serif;
+    font-size: 20.00px;
+    font-weight: 100;
+    font-style: normal;
+    margin-top: 25px;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.latobody{
+	font-family: khula, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	margin-bottom: 50px;
+	padding-right: 50px;
+	
+}
+.latobody-emp{
+	font-family: khula, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	margin-bottom: 50px;
+
+}
+
+.properties{
+	font-family: khula, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;	
+	padding-left: 25px;
+	border-left: 1px solid rgb(105, 105, 105, 0.25);
+
+}
+	
+.latobody-link{
+	font-family: khula, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: italic;
+	margin-bottom: 50px;
+	text-decoration: underline;
+
+}
+
+.a{
+	font-size: 20px;
+	font-weight: 400;
+	font-style: italic;
+	margin-bottom: 50px;
+	text-decoration: underline;
+}
+
+
+
+
+
+
