@@ -294,7 +294,7 @@ if (reversed == null) { reversed = false; }
 	var props = new Object();
 	props.mode = mode;
 	props.startPosition = startPosition;
-	props.labels = {StartSquash:0,StartAnticipation:20};
+	props.labels = {StartSquash:0};
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
@@ -316,17 +316,6 @@ if (reversed == null) { reversed = false; }
 		Stops the specified movie clip or video.
 		*/
 		_this.stop();
-		var _this = this;
-		/*
-		Clicking on the specified symbol instance executes a function.
-		*/
-		_this.StartAnticipation.on('click', function(){
-		/*
-		Moves the playhead to the specified frame number in the timeline and continues playback from that frame.
-		Can be used on the main timeline or on movie clip timelines.
-		*/
-		_this.gotoAndPlay('StartAnticipate');
-		});
 		var _this = this;
 		/*
 		Clicking on the specified symbol instance executes a function.
@@ -365,54 +354,42 @@ if (reversed == null) { reversed = false; }
 	mask.graphics.p("EAkuAoyQgyAAAAgyMAAAhP/QAAgyAyAAMAtUAAAQAyAAAAAyMAAABP/QAAAygyAAgEgXlAoyQgyAAAAgyMAAAhP/QAAgyAyAAMAtTAAAQAyAAAAAyMAAABP/QAAAygyAAgEhSBAoyQgyAAAAgyMAAAhP/QAAgyAyAAMAtUAAAQAyAAAAAyMAAABP/QAAAygyAAg");
 	mask.setTransform(630,319);
 
-	// Anticipation
-	this.instance = new lib.Tween3("synched",0);
-	this.instance.setTransform(620,540);
+	// Object
+	this.instance = new lib.Object("synched",0);
+	this.instance.setTransform(250.05,0.1,0.75,1.45,0,0,0,40.1,40.1);
+	this.instance._off = true;
 
-	var maskedShapeInstanceList = [this.instance];
-
-	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
-		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
-	}
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(20).to({startPosition:0},0).wait(1).to({scaleY:0.75,y:550},0).wait(80));
-
-	// SquashandStretch
-	this.instance_1 = new lib.Object("synched",0);
-	this.instance_1.setTransform(250.05,0.1,0.75,1.45,0,0,0,40.1,40.1);
+	this.instance_1 = new lib.Tween1("synched",0);
+	this.instance_1.setTransform(250,540);
 	this.instance_1._off = true;
 
-	this.instance_2 = new lib.Tween1("synched",0);
-	this.instance_2.setTransform(250,540);
+	this.instance_2 = new lib.Tween2("synched",0);
+	this.instance_2.setTransform(250.1,360,0.75,1.025,0,0,0,0.1,0);
 	this.instance_2._off = true;
 
-	this.instance_3 = new lib.Tween2("synched",0);
-	this.instance_3.setTransform(250.1,360,0.75,1.025,0,0,0,0.1,0);
+	this.instance_3 = new lib.Tween3("synched",0);
+	this.instance_3.setTransform(250,540);
 	this.instance_3._off = true;
 
-	this.instance_4 = new lib.Tween3("synched",0);
-	this.instance_4.setTransform(250,540);
+	this.instance_4 = new lib.Tween4("synched",0);
+	this.instance_4.setTransform(250,506);
 	this.instance_4._off = true;
 
-	this.instance_5 = new lib.Tween4("synched",0);
-	this.instance_5.setTransform(250,506);
-	this.instance_5._off = true;
+	this.instance_5 = new lib.Tween5("synched",0);
+	this.instance_5.setTransform(250,540);
 
-	this.instance_6 = new lib.Tween5("synched",0);
-	this.instance_6.setTransform(250,540);
-
-	var maskedShapeInstanceList = [this.instance_1,this.instance_2,this.instance_3,this.instance_4,this.instance_5,this.instance_6];
+	var maskedShapeInstanceList = [this.instance,this.instance_1,this.instance_2,this.instance_3,this.instance_4,this.instance_5];
 
 	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},8).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},3).to({state:[{t:this.instance_4}]},3).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).wait(82));
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({_off:false},0).to({_off:true,regX:0,regY:0,scaleX:1,scaleY:1,x:250,y:540},8).wait(92));
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1).to({_off:false},8).to({scaleX:1.25,scaleY:0.875,y:545},1).to({_off:true,regX:0.1,scaleX:0.75,scaleY:1.025,x:250.1,y:360},3).wait(88));
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(10).to({_off:false},3).to({_off:true,regX:0,scaleX:1,scaleY:1,x:250,y:540},3).wait(85));
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(13).to({_off:false},3).to({regY:0.1,scaleY:0.825,y:547.05},1).to({_off:true,regY:0,scaleY:1,y:506},1).wait(83));
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(17).to({_off:false},1).to({_off:true,y:540},1).wait(82));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},1).to({state:[{t:this.instance_1}]},8).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},3).to({state:[{t:this.instance_3}]},3).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).wait(82));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({_off:true,regX:0,regY:0,scaleX:1,scaleY:1,x:250,y:540},8).wait(92));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({_off:false},8).to({scaleX:1.25,scaleY:0.875,y:545},1).to({_off:true,regX:0.1,scaleX:0.75,scaleY:1.025,x:250.1,y:360},3).wait(88));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(10).to({_off:false},3).to({_off:true,regX:0,scaleX:1,scaleY:1,x:250,y:540},3).wait(85));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(13).to({_off:false},3).to({regY:0.1,scaleY:0.825,y:547.05},1).to({_off:true,regY:0,scaleY:1,y:506},1).wait(83));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(17).to({_off:false},1).to({_off:true,y:540},1).wait(82));
 
 	// ButtonOne
 	this.StartSquash = new lib.Button();
@@ -423,16 +400,16 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.StartSquash).wait(101));
 
 	// Stages
+	this.instance_6 = new lib.StageOutline("synched",0);
+	this.instance_6.setTransform(1009.7,319.05,1,0.9158,0,0,0,150,285);
+
 	this.instance_7 = new lib.StageOutline("synched",0);
-	this.instance_7.setTransform(1009.7,319.05,1,0.9158,0,0,0,150,285);
+	this.instance_7.setTransform(623.8,319.05,1,0.9158,0,0,0,150,285);
 
 	this.instance_8 = new lib.StageOutline("synched",0);
-	this.instance_8.setTransform(623.8,319.05,1,0.9158,0,0,0,150,285);
+	this.instance_8.setTransform(250,319.05,1,0.9158,0,0,0,150,285);
 
-	this.instance_9 = new lib.StageOutline("synched",0);
-	this.instance_9.setTransform(250,319.05,1,0.9158,0,0,0,150,285);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_9},{t:this.instance_8},{t:this.instance_7}]}).wait(101));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.instance_7},{t:this.instance_6}]}).wait(101));
 
 	this._renderFirstFrame();
 
@@ -447,7 +424,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/AnimationHW_atlas_1.png?1652491344576", id:"AnimationHW_atlas_1"}
+		{src:"images/AnimationHW_atlas_1.png", id:"AnimationHW_atlas_1"}
 	],
 	preloads: []
 };
