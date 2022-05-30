@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Llosik Design System</title>
+     <link rel="icon" type="image/png" sizes="100x100"  href="../images/favicon-96x96.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- This is where you put your google font in if applicable -->
+<!--     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet"> -->
+
+<!-- This is the link to the toggle hamburger -->
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    
+    <div class="d-flex">
+      <nav id="sidebar">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="toggle-btn">
+              <span class="sr-only">Toggle Menu</span>
+                    <div id="nav-icon1" >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+               </button>
+          </div>
+		<div class="p-4 pt-6">
+		  <a href="../index.html" class="logo"> <img src="../images/logo_w_outline.png" width="200" height="200" alt="logo outlined"> </a>
+
+	       <ul class="list-unstyled components">
+	     
+	          <li class="active">
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Foundations</a>
+	            
+			            <ul class="collapse list-unstyled" id="homeSubmenu">
+		                <li>
+		                    <a href="../foundation/type.html">Typography</a>
+		                </li>
+		                <li>
+		                    <a href="../foundation/color.html">Color</a>
+		                </li>
+		                <li>
+		                    <a href="../foundation/logo.html">Logo</a>
+		                </li>
+			            </ul>
+	          </li>
+	          
+	          <li>
+              <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
+              <ul class="collapse.show list-unstyled" id="ComponentsSubmenu">
+               <li>
+                    <a href="Buttons.html">Buttons</a>
+                </li>
+                <li>
+                    <a href="cards.html">Cards</a>
+                </li>
+                <li>
+                    <a href="#">Navigation Bar</a>
+                </li>
+              </ul>
+	          </li>
+
+	          <li>
+              <a href="#PatternsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Patterns</a>
+              <ul class="collapse list-unstyled" id="PatternsSubmenu">
+                 <li>
+                    <a href="../patterns/home.html">Home</a>
+                </li>
+                <li>
+                    <a href="../patterns/about.html">About</a>
+                </li>
+               
+              </ul>
+	          </li>
+	         
+	         
+	        </ul> 
+
+	      
+
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div class = "container">
+          <div class = "row p-5 pt-6">
+            <div id="content">
+
+              <h2>Navigation Bar</h2>
+              <p>Each page includes navigation bar. This provides easy access to desired page. </p>
+
+              <hr class="line">
+              <div class="divider"> </div>  
+              
+              <div class="row">
+              <div class="col">
+
+              <nav class="navbar navbar-expand-lg bg-light">
+              <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+              <img src="../images/Logo_bw.png" width="60" class="d-inline-block align-top" alt="llosik logo"></a>
+              <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end nav-bg" id="navbarNav">
+              <ul class="navbar-nav">
+              <li class="nav-item">
+              <a class="nav-link active navtext" href="#">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link navtext" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link navtext" href="#">CONTACTS</a>
+              </li>               
+              </ul>
+              </div>
+              </div>
+              </nav>
+
+
+ <div class="divider"> </div>
+
+<h3> Accessibility Considerations</h3>
+<p> Provide hight contrast for accesability and clarity. Indicate current page with distinct color.</p>
+ <br>
+    <h3> Usage</h3>
+              <p> Navigation bar should be included on all pages.</p>
+              <br>
+             
+
+ <h3> Code example</h3>
+    <pre>
+      <code>
+
+         &lt;nav class="navbar navbar-expand-lg bg-light"&gt; 
+              &lt;div class="container-fluid"&gt; 
+               &lt;a class="navbar-brand" href="#"&gt; 
+               &lt;img src="../images/Logo_bw.png" width="60" class="d-inline-block align-top" alt="llosik logo"&gt;  &lt;/a&gt; 
+               &lt;button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"&gt; 
+               &lt;span class="navbar-toggler-icon"&gt;   &lt;/span&gt; 
+               &lt;div class="collapse navbar-collapse justify-content-end nav-bg" id="navbarNav"&gt; 
+               &lt;ul class="navbar-nav"&gt; 
+                &lt;li class="nav-item">
+               &lt;a class="nav-link active navtext" href="#">PROJECTS  &lt;/a&gt; 
+                &lt;/li&gt; 
+                &lt;li class="nav-item"&gt; 
+                &lt;a class="nav-link navtext" href="#">ABOUT&lt;/a&gt; 
+                &lt;/li&gt; 
+               &lt;li class="nav-item"&gt; 
+               &lt;a class="nav-link navtext" href="#">CONTACTS<&lt;/a&gt; 
+               &lt;/li&gt;              
+                &lt;/ul&gt; 
+             &lt;/div&gt; 
+           </code>
+         </pre>
+         
+
+
+    		             
+    
+        </div>      <!-- Content  -->
+      </div><!-- Row  -->
+    </div><!-- Container -->
+</div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
