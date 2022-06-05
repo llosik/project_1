@@ -14,10 +14,10 @@ body{
 
 .footer{
 	background-color: #222;
-	height: 100px;
+	height: 120px;
 	margin-top: 50px;
 	color:  rgba(255,255,255,.55);
-	padding-top: 20px;
+	
 	text-align: center;
 }
 
@@ -346,14 +346,6 @@ body{
 
 }
 
-.a{
-	font-size: 20px;
-	font-weight: 400;
-	font-style: italic;
-	margin-bottom: 50px;
-	text-decoration: underline;
-}
-
 
 .icon {
   position: absolute;
@@ -426,9 +418,10 @@ h5, .h5{
 p, .p, li, .li, ul, .ul{
 	font-size: 18;
 	color: #6f6f6f;
-	font-family: Inter, sans-serif;
+	font-family: Urbanist, sans-serif;
 	font-weight: 400;
 }
+
 a {
 	font-size: 18;
 	color: #111;
@@ -438,7 +431,9 @@ a {
 }
 
 a:hover{
-	font-weight: 500;
+	font-weight: 600;
+	color: #111;
+
 }
 
 .navbar-light .navbar-nav .nav-link {
